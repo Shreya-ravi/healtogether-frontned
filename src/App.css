@@ -1,0 +1,580 @@
+.app-shell {
+  min-height: 100vh;
+  font-family: 'Inter', sans-serif;
+  background-color: #f0f4f8;
+  background-image: radial-gradient(#d1dce8 0.5px, transparent 0.5px);
+  background-size: 20px 20px;
+  color: #1e293b;
+}
+
+.page-center {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.page-wrap {
+  min-height: 100vh;
+  padding: 2rem 1rem;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 80rem;
+  border-radius: 1.5rem;
+  padding: 2rem;
+  margin: 2rem 0;
+}
+
+.form-card {
+  width: 100%;
+  max-width: 56rem;
+  border-radius: 1.5rem;
+  padding: 2rem;
+  margin: 2rem 0;
+}
+
+.soft-panel {
+  background: #f8fafc;
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+  border: 1px solid #f1f5f9;
+}
+
+.auth-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.tag-blue,
+.tag-gray,
+.tag-emerald {
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.375rem;
+}
+
+.tag-blue {
+  color: #3b82f6;
+  background: #eff6ff;
+}
+
+.tag-gray {
+  color: #64748b;
+  background: white;
+  border: 1px solid #e2e8f0;
+}
+
+.tag-emerald {
+  color: #059669;
+  background: #ecfdf5;
+}
+
+.input-field {
+  transition: all 0.2s ease-in-out;
+  border: 1.5px solid #e2e8f0;
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.1);
+}
+
+.hero-button {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  border: 0;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 1rem;
+  color: white;
+  transition: all 0.2s ease-in-out;
+  transform: translateY(0);
+  box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.15);
+}
+
+.hero-button:hover {
+  transform: translateY(-2px);
+}
+
+.success-toast {
+  position: fixed;
+  top: 1.5rem;
+  right: 1.5rem;
+  background: white;
+  border-left: 4px solid #22c55e;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 20px 30px -12px rgba(0, 0, 0, 0.2);
+  z-index: 50;
+}
+
+.success-toast-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.success-toast-row p {
+  margin: 0;
+  color: #374151;
+  font-weight: 500;
+}
+
+.toast-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: #22c55e;
+}
+
+.account-badge-wrap {
+  position: fixed;
+  top: 1.5rem;
+  right: 1.5rem;
+  z-index: 40;
+}
+
+.account-badge-card {
+  border-radius: 1rem;
+  padding: 0.75rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.account-initial {
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 999px;
+  background: #dbeafe;
+  color: #1d4ed8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.logout-button {
+  margin-left: 0.5rem;
+  font-size: 0.625rem;
+  font-weight: 700;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.logout-button:hover {
+  color: #ef4444;
+}
+
+.symptom-pill-button {
+  display: block;
+  padding: 0.625rem 1.25rem;
+  border-radius: 999px;
+  border: 2px solid #f1f5f9;
+  background: #f8fafc;
+  color: #475569;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.symptom-pill-button-active {
+  background: #eff6ff;
+  border-color: #3b82f6;
+  color: #1d4ed8;
+}
+
+.main-card {
+  background: #fff;
+  box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e5eef8;
+}
+
+.remedy-item {
+  transition: 0.2s;
+  border: 2px solid transparent;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.remedy-item:hover {
+  background: #f8fbff;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(15, 23, 42, 0.08);
+}
+
+.remedy-item.active {
+  border-color: #2563eb;
+  background: linear-gradient(135deg, #eff6ff 0%, #f8fbff 100%);
+  box-shadow: 0 16px 32px rgba(37, 99, 235, 0.16);
+}
+
+.section-block {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.doctor-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  border-radius: 999px;
+  background: #eff6ff;
+  color: #1d4ed8;
+  padding: 0.25rem 0.5rem;
+  font-size: 9px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.tag-chip {
+  font-size: 10px;
+  font-weight: 700;
+  color: #2563eb;
+  background: #eff6ff;
+  padding: 0.25rem 0.5rem;
+  border-radius: 999px;
+}
+
+.review-pill {
+  font-size: 10px;
+  font-weight: 700;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.summary-chip {
+  background: white;
+  border-radius: 0.75rem;
+  border: 1px solid #dbeafe;
+  padding: 0.75rem;
+}
+
+.summary-chip span {
+  display: block;
+  font-size: 10px;
+  font-weight: 700;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.25rem;
+}
+
+.summary-chip strong {
+  color: #334155;
+  font-weight: 500;
+}
+
+.back-button {
+  border-radius: 1rem;
+  background: white;
+  padding: 0.75rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #334155;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.06);
+}
+
+.back-button:hover {
+  background: #f8fafc;
+}
+
+.doctor-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr;
+}
+
+.doctor-profile-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid #e5eef8;
+  border-radius: 1.5rem;
+  padding: 1.25rem;
+  box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.05);
+}
+
+.doctor-profile-icon {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eff6ff;
+  color: #1d4ed8;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.doctor-profile-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.doctor-profile-name {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 800;
+  color: #1e293b;
+}
+
+.doctor-profile-line {
+  margin: 0;
+  font-size: 0.875rem;
+  color: #64748b;
+}
+
+.doctor-filter-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.doctor-filter-pill {
+  border: 1px solid #dbeafe;
+  background: white;
+  color: #475569;
+  border-radius: 999px;
+  padding: 0.55rem 0.9rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.doctor-filter-pill.active {
+  background: #eff6ff;
+  color: #1d4ed8;
+  border-color: #93c5fd;
+}
+
+.doctor-remedy-card,
+.patient-history-card,
+.empty-state-card {
+  background: #f8fafc;
+  border-radius: 1.5rem;
+  padding: 1.25rem;
+  border: 1px solid #e2e8f0;
+}
+
+.patient-history-selectable {
+  transition: all 0.2s ease;
+}
+
+.patient-history-selectable.active {
+  border-color: #93c5fd;
+  background: linear-gradient(135deg, #eff6ff 0%, #f8fbff 100%);
+}
+
+.patient-name-button {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #1e293b;
+  cursor: pointer;
+  text-align: left;
+}
+
+.patient-name-button:hover {
+  color: #2563eb;
+}
+
+.doctor-meta-card {
+  background: white;
+  border: 1px solid #dbeafe;
+  border-radius: 1rem;
+  padding: 0.9rem 1rem;
+}
+
+.patient-detail-panel {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 1.5rem;
+  padding: 1.25rem;
+}
+
+.timeline-card {
+  background: white;
+  border: 1px solid #dbeafe;
+  border-radius: 1.1rem;
+  padding: 1rem;
+}
+
+.shared-review-card {
+  background: #f8fafc;
+  border-radius: 1.25rem;
+  padding: 1rem;
+  border: 1px solid #e2e8f0;
+}
+
+.review-suggestion-box {
+  background: white;
+  border: 1px solid #dbeafe;
+  border-radius: 1rem;
+  padding: 0.85rem 1rem;
+}
+
+.doctor-review-badge,
+.patient-review-badge {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  padding: 0.35rem 0.7rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.doctor-review-badge {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.patient-review-badge {
+  background: #eff6ff;
+  color: #1d4ed8;
+}
+
+.useful-button,
+.share-review-button {
+  border: 0;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.useful-button {
+  border-radius: 999px;
+  background: #eff6ff;
+  color: #1d4ed8;
+  padding: 0.55rem 0.9rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.useful-button:hover {
+  background: #dbeafe;
+}
+
+.share-review-form {
+  border-top: 1px solid #e2e8f0;
+  padding-top: 1.25rem;
+}
+
+.share-review-button {
+  width: 100%;
+  border-radius: 1rem;
+  background: #0f766e;
+  color: white;
+  padding: 0.95rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  box-shadow: 0 10px 20px -10px rgba(15, 118, 110, 0.4);
+}
+
+.share-review-button:hover {
+  background: #115e59;
+  transform: translateY(-1px);
+}
+
+.status-pill {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  padding: 0.35rem 0.75rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.status-pill.pending {
+  background: #fef3c7;
+  color: #b45309;
+}
+
+.status-pill.approved {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.status-pill.rejected {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.approve-btn,
+.reject-btn {
+  border: 0;
+  border-radius: 0.9rem;
+  padding: 0.8rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.approve-btn {
+  background: #16a34a;
+  color: white;
+}
+
+.reject-btn {
+  background: #fef2f2;
+  color: #dc2626;
+}
+
+.severity-chip {
+  font-size: 10px;
+  font-weight: 700;
+  color: #047857;
+  background: #ecfdf5;
+  padding: 0.25rem 0.5rem;
+  border-radius: 999px;
+}
+
+@media (min-width: 1024px) {
+  .auth-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .doctor-grid {
+    grid-template-columns: 1.1fr 0.9fr;
+  }
+}
+
+@media (min-width: 768px) {
+  .auth-card,
+  .form-card {
+    padding: 3rem;
+  }
+}

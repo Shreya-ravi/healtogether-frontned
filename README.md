@@ -64,3 +64,14 @@ const API_BASE = 'https://healtogether-backend.onrender.com/api
 # Build Command
 
 npm run build
+
+<img width="348" height="462" alt="image" src="https://github.com/user-attachments/assets/144bf628-532e-48e7-96ef-7a4013379feb" />
+
+<img width="383" height="525" alt="image" src="https://github.com/user-attachments/assets/1f970876-5fcb-430e-a3ac-dd909ac2598d" />
+
+<img width="448" height="593" alt="image" src="https://github.com/user-attachments/assets/66996ab1-d4e4-4402-bf38-67686230aab7" />
+
+<img width="439" height="573" alt="image" src="https://github.com/user-attachments/assets/fafe5eac-eec4-4392-88dd-2403332a675c" />
+
+<img width="636" height="598" alt="image" src="https://github.com/user-attachments/assets/1db3361d-b11d-400f-9c7e-5fe3c4bc58c4" />
+
